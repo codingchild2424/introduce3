@@ -1,5 +1,23 @@
 @charset "utf-8";
 
+@keyframes slidein{
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+#contents{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+
 body{
     width: 100%;
     height:100%;
@@ -16,6 +34,8 @@ body{
 }
 
 #header {
+    animation-duration: 3s;
+    animation-name: slidein;
     color : black;
     text-align: center;
     font-family: 'Slabo 27px', serif;
